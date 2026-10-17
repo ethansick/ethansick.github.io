@@ -172,7 +172,8 @@
     <nav class="nav" aria-label="Sections">
       <a href="#about">About</a>
       <a href="#publications">Publications</a>
-      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a class="nav-optional" href="#work">Work</a>
       <a class="nav-optional" href="#education">Education</a>
     </nav>
   </div>
@@ -247,6 +248,18 @@
           <span class="stack">Python, LLM agents, GitLab CI/CD</span></li>
         <li><b>Robot hardware and CI.</b> Built wrist-mounted camera systems for Unitree G1 humanoid robots, and CI tooling for automated robot testing.
           <span class="stack">Unitree G1, CI tooling</span></li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Personal Projects</h2>
+      <ul class="work-list">
+        <li><b>Mizlet.</b> A self-hosted Quizlet clone for a few users, with Flashcards, Learn, Write, Test, and Match modes, plus Anki-style spaced-repetition review scheduled with FSRS. It imports Anki decks in both current and legacy formats, runs as a single Docker container on my home server, and is covered by Playwright end-to-end tests.
+          <span class="stack">React, TypeScript, Hono, SQLite (Drizzle), Docker, Playwright</span></li>
+        <li><b>Self-hosted media stack.</b> A Docker Compose deployment of over a dozen services. Selected containers share a VPN container's network namespace, so they lose connectivity if the tunnel drops, and a watchdog recovers them automatically. Plex and Jellyfin use GPU hardware transcoding.
+          <span class="stack">Docker Compose, WireGuard, Linux networking, Bash, Python</span></li>
+        <li><b>Music Automater.</b> A self-hosted web app that downloads audio, organizes it into an Artist/Album library with beets, skips tracks already in the library, and shows live queue progress. Published as a Docker image for NAS deployments.
+          <span class="stack">JavaScript, Python, Docker, nginx</span></li>
       </ul>
     </section>
 
